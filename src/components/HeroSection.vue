@@ -28,10 +28,7 @@ export default {};
 
   @include mediaXs {
     height: 100%;
-  }
-
-  @include mediaXs {
-    height: 100%;
+    margin-bottom: 50px;
     padding-top: 0;
   }
 

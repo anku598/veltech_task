@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import LocationCard from './LocationCard.vue';
-import locationData from '../../data.js';
+import LocationCard from "./LocationCard.vue";
+import locationData from "../../data.js";
 export default {
-  name: 'LocationGrid',
+  name: "LocationGrid",
   components: {
     LocationCard,
   },
@@ -29,11 +29,18 @@ export default {
 
 <style lang="scss" scoped>
 .location-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: inherit;
+
+  @include mediaXl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 80%;
+  }
 }
 </style>
