@@ -4,17 +4,17 @@
       v-for="(location, idx) in locations"
       :key="'offices' + idx"
       :location="location"
-      :index="idx + 1"
+      :index="idx"
       :length="locations.length"
     />
   </div>
 </template>
 
 <script>
-import LocationCard from "./LocationCard.vue";
-import locationData from "../../data.js";
+import LocationCard from './LocationCard.vue';
+import locationData from '../../data.js';
 export default {
-  name: "LocationGrid",
+  name: 'LocationGrid',
   components: {
     LocationCard,
   },
