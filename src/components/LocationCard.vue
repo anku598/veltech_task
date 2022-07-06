@@ -85,13 +85,6 @@ export default {
 
   @include mediaXl {
     padding: 0;
-    // &:nth-child(1) {
-    //   grid-column: 1 / 3;
-    // }
-
-    // &:nth-child(6) {
-    //   grid-column: 3 / 5;
-    // }
   }
 
   .hover-state-details {
